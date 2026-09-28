@@ -1,0 +1,46 @@
+{
+  "name": "@polymer505/mss",
+  "version": "0.0.0",
+  "description": "Command-line tool for checking Minecraft servers.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Polymer-505/mss"
+  },
+  "homepage": "https://github.com/Polymer-505/mss#readme",
+  "bugs": {
+    "url": "https://github.com/Polymer-505/mss/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build:win": "pkg index.js --targets latest-win-x64 --output ./build/mss-win.exe",
+    "build:win-arm64": "pkg index.js --targets latest-win-arm64 --output ./build/mss-win-arm64.exe",
+    "build": "pkg index.js --targets latest-linux-x64 --output ./build/mss-linux",
+    "build-arm64": "pkg index.js --targets latest-linux-arm64 --output ./build/mss-linux-arm64"
+  },
+  "bin": {
+    "mss": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "minecraft",
+    "minecraft-server",
+    "cli",
+    "status",
+    "ping"
+  ],
+  "author": "Polymer-505",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.22.0"
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1"
+  }
+}
