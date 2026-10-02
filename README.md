@@ -28,23 +28,22 @@ npx @polymer505/mss <host>
 Run `mss` by specifying server ip:
 
 ```bash
-mss <host>
+mss <edition> <host>
 ```
 
 ## Example
 
 ```bash
-mss 2b2t.org
+mss java 2b2t.org
 ```
 
 ### Preview
 
 ```
 2b2t.org is online
-Ip: 40.223.14.133:25565
-Version: 1.7.2-26.2
-Players: 1125/1
-Software: Velocity
+IP         40.223.14.133:25565
+Version    Velocity 1.7.2-26.2
+Players    1130/1
 ```
 
 ## Building from Source
